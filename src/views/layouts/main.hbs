@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../sources/css/style.css" rel="stylesheet" type="text/css">
+    <title>BRM INVENTORY APIRest</title>
+<style>
+div.cuadricula {
+    display: grid;
+    grid-template-columns: left-line 1fr left-medium 1fr rigth-medium 1fr rigth-line 1fr;
+    grid-template-rows: top-line 1fr top-medium 1fr bottom-medium 1fr bottom-line 1fr;
+  }
+
+header {
+      background-color: rgb(194, 235, 229);
+      grid-column-start:  top-line;
+      grid-column-end: top-medium;
+  }
+
+body {
+      background-color: rgba(203, 243, 230, 0.892);
+      grid-row: top-medium / bottom-medium;
+  }
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: [top] 1fr [topm] 1fr [bottom] 1fr;}
+
+.header {background-color:  rgb(194, 235, 229);
+        grid-column-end: bottom;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="cuadricula">
+            <div class="header"><h1>BRM APIRest</h1></div>
+         </div>
+    </header>
+    <main class="container" aria-colindex="a" >
+        {{{ body }}}
+    </main>
+</body>
+</html>

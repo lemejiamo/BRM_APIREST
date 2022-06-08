@@ -1,0 +1,42 @@
+<!--error session-->
+<div>
+{{#each error}}
+    <ul>
+        <li>
+        {{text}}
+        </li>
+    </ul>
+{{/each }}
+</div>
+<!--body render-->
+<div>
+    <h2>Nombre Producto: {{name}} </h2>
+</div>
+
+<form action="/productUpdate" method="post">
+        <ul>
+            <li>
+                <label for="price">Precio:</label>
+                <input type="number" id="price" name="price">
+            </li>
+            <li>
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" name="quantity">
+            </li>
+            <li>
+                <label for="date">Fecha de Ingreso:</label>
+                <input type="date" id="date" name="date_in">
+            </li>
+            <li>
+                <label for="lot">Numero de lote:</label>
+                <input type="text" id="lot_num" name="lot_num">
+            </li>
+            <li>
+                <label for="cost">Costo:</label>
+                <input type="number" id="cost" name="cost">
+            </li>
+            <div class="button">
+                <button type="submit">Actualizar</button>
+            </div>
+        </ul>
+</form>

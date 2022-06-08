@@ -1,0 +1,28 @@
+div.cuadricula {
+    display: grid;
+    grid-template-columns: left-line 1fr left-medium 1fr rigth-medium 1fr rigth-line 1fr;
+    grid-template-rows: top-line 1fr top-medium 1fr bottom-medium 1fr bottom-line 1fr;
+  }
+
+header {
+      background-color: rgb(185, 24, 24);
+      grid-column-start:  top-line;
+      grid-column-end: top-medium;
+  }
+
+body {
+      background-color: aquamarine;
+      grid-row: top-medium / bottom-medium;
+  }
+
+
+
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: [top] 1fr [topm] 1fr [bottom] 1fr;}
+
+.header {background-color: azure;
+        grid-column-end: bottom;
+}
+

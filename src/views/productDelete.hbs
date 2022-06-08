@@ -1,0 +1,23 @@
+<div>
+{{#each error}}
+    <ul>
+        <li>
+        {{text}}
+        </li>
+    </ul>
+{{/each }}
+</div>
+
+<!--body render-->
+<form action="/productDelete" method="post">
+        <ul>
+            <li>
+                <label for="name">Nombre Producto:</label>
+                <input type="text" id="name" name="name">
+            </li>
+            <div class="button">
+                <button type="submit">Buscar</button>
+            </div>
+        </ul>
+</form>
+
