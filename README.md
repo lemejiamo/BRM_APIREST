@@ -25,9 +25,9 @@ El servidor se ejecuta en localhost y el puerto predeterminado para la conexion 
 
 Acceda desde su navegador preferido en la direccion "localhost:3000"
 
-DATE 2022 06 07 
 
 # Rutas API
+DATE 2022 06 07
 
 ## Usuarios
 
