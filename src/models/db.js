@@ -3,8 +3,8 @@ const mysql = require('mysql');
 const dbconection = mysql.createConnection({
     host: 'localhost',
     database: 'BRM_STORE',
-    user: 'root',
-    password: '123456789',
+    user: 'BRM_DEV',
+    password: 'BRMDEV',
     insecureAuth : true
 });
 
